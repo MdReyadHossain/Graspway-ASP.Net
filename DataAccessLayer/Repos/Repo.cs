@@ -8,10 +8,10 @@ namespace DataAccessLayer.Repos
 {
     public class Repo
     {
-        internal ProjectContext db;
+        internal AppDbContext db;
         internal Repo()
         {
-            db = new ProjectContext();
+            db = new AppDbContext();
         }
     }
 }

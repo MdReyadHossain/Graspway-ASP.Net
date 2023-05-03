@@ -11,15 +11,29 @@ namespace DataAccessLayer
 {
     public class DataAccessFactory
     {
-        public static IMember<Member, int, bool> MemberData()
+        public static IProfile<Admin, int, string, bool> AdminData()
         {
-            return new MemberRepo();
-        }
-        
-        public static IProject<Project, int, string, bool> ProjectData()
-        {
-            return new ProjectRepo();
+            return new AdminRepo();
         }
 
+        public static IProfile<Student, int, string, bool> StudentData()
+        {
+            return new StudentRepo();
+        }
+
+        public static IData<Catagory, int, bool> CatagoryData()
+        {
+            return new CatagoryRepo();
+        }
+
+        public static IData<CourseStudent, int, bool> CourseStudentData()
+        {
+            return new CourseStudentRepo();
+        }
+
+        public static IData<CourseReview, int, bool> CourseReviewData()
+        {
+            return new CourseReviewRepo();
+        }
     }
 }
