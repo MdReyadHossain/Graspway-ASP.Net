@@ -12,22 +12,32 @@ namespace DataAccessLayer.Repos
     {
         public bool Add(CourseStudent obj)
         {
-            throw new NotImplementedException();
+            db.CourseStudents.Add(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var st = Get(id);
+            db.CourseStudents.Remove(st);
+            return db.SaveChanges() > 0;
         }
 
         public List<CourseStudent> Get()
         {
-            throw new NotImplementedException();
+            return db.CourseStudents.ToList();
         }
 
         public bool Update(CourseStudent obj)
         {
-            throw new NotImplementedException();
+            var courseStudent = Get(obj.id);
+            db.Entry(courseStudent).CurrentValues.SetValues(obj);
+            return db.SaveChanges() > 0;
+        }
+
+        public CourseStudent Get(int id)
+        {
+            return db.CourseStudents.Find(id);
         }
     }
 }

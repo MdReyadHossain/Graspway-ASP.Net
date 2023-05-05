@@ -33,6 +33,18 @@ namespace BusinessLogicLayer.Services
             return Convert(DataAccessFactory.AdminData().Get(name));
         }
 
+        public static bool Update(AdminDTO student)
+        {
+            var data = Convert(student);
+            return DataAccessFactory.AdminData().Update(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            var student = DataAccessFactory.AdminData();
+            return student.Delete(id);
+        }
+
         static List<AdminDTO> Convert(List<Admin> prj)
         {
             var data = new List<AdminDTO>();

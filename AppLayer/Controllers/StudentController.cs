@@ -11,6 +11,7 @@ namespace AppLayer.Controllers
 {
     public class StudentController : ApiController
     {
+        // --------student profile route START-------- \\
         [HttpPost]
         [Route("api/student/add")]
         public HttpResponseMessage Add(StudentDTO student)
@@ -56,13 +57,51 @@ namespace AppLayer.Controllers
             }
         }
 
+        [HttpPatch]
+        [Route("api/student/editprofile")]
+        public IHttpActionResult Patch([FromBody] StudentDTO std)
+        {
+            try
+            {
+                var isUpdated = StudentService.Update(std);
+                return ResponseMessage(isUpdated
+                    ? Request.CreateResponse(HttpStatusCode.OK)
+                    : Request.CreateResponse(HttpStatusCode.BadRequest));
+            }
+            catch (Exception e)
+            {
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, e.Message));
+            }
+        }
+
         [HttpGet]
         [Route("api/student/delete/{id}")]
         public HttpResponseMessage DeleteStudent(int id)
         {
             var res = StudentService.Delete(id);
             return Request.CreateResponse(HttpStatusCode.OK, res);
-
         }
+
+        // --------student profile route END-------- \\
+
+        // --------Course Review route START-------- \\
+
+        [HttpPost]
+        [Route("api/coursereview/add")]
+        public HttpResponseMessage AddReview(CourseReviewDTO review)
+        {
+            try
+            {
+                var res = CourseReviewService.Create(review);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        // --------Course Review route END-------- \\
     }
 }
