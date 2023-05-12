@@ -1,0 +1,14 @@
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\GraspWayDataAccessLayer.dll.config
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\GraspWayDataAccessLayer.dll
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\GraspWayDataAccessLayer.pdb
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.csproj.AssemblyReference.cache
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.csproj.CopyComplete
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.dll
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.pdb
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.Migrations.InstructorEntityCreated.resources
+D:\Code\Advance .Net\Final Project\GraspWayDataAccessLayer\obj\Debug\GraspWayDataAccessLayer.csproj.GenerateResource.cache

@@ -1,0 +1,15 @@
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayBusinessLogicLayer.dll.config
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayBusinessLogicLayer.dll
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayBusinessLogicLayer.pdb
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayDataAccessLayer.dll
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayDataAccessLayer.pdb
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\GraspWayDataAccessLayer.dll.config
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\obj\Debug\GraspWayBusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\obj\Debug\GraspWayBusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\obj\Debug\GraspWayBusinessLogicLayer.csproj.CopyComplete
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\obj\Debug\GraspWayBusinessLogicLayer.dll
+D:\Code\Advance .Net\Final Project\GraspWayBusinessLogicLayer\obj\Debug\GraspWayBusinessLogicLayer.pdb
