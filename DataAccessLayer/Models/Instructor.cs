@@ -34,7 +34,7 @@ namespace DataAccessLayer.Models
         public string InstructorImage { get; set; }
 
         [Required]
-        public int TotalIncome { get; set; }
+        public double TotalIncome { get; set; }
 
         [Required]
         public double Rating { get; set; }

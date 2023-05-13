@@ -26,5 +26,8 @@ namespace BusinessLogicLayer.DTOs
 
         [Required]
         public double Rating { get; set; }
+
+        [Required]
+        public double Price { get; set; }
     }
 }

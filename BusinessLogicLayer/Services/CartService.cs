@@ -18,21 +18,15 @@ namespace BusinessLogicLayer.Services
             return Convert(data);
         }
 
-        public static bool Checkout(int student_id)
+        public static object Checkout(int studentId)
         {
-            return DataAccessFactory.CartData().Checkout(student_id);
+            return DataAccessFactory.CartData().Checkout(studentId);
         }
 
-        public static bool Create(CartDTO prj)
+        public static bool Create(CartDTO cart)
         {
-            var data = Convert(prj);
+            var data = Convert(cart);
             return DataAccessFactory.CartData().Add(data);
-        }
-
-        public static bool Update(CartDTO cat)
-        {
-            var data = Convert(cat);
-            return DataAccessFactory.CartData().Update(data);
         }
 
         public static bool Delete(int id)
@@ -56,8 +50,7 @@ namespace BusinessLogicLayer.Services
             {
                 id = prj.id,
                 CourseId = prj.CourseId,
-                StudentId = prj.StudentId,
-                Price = prj.Price
+                StudentId = prj.StudentId
             };
         }
         static Cart Convert(CartDTO prj)
@@ -66,8 +59,7 @@ namespace BusinessLogicLayer.Services
             {
                 id = prj.id,
                 CourseId = prj.CourseId,
-                StudentId = prj.StudentId,
-                Price = prj.Price
+                StudentId = prj.StudentId
             };
         }
     }

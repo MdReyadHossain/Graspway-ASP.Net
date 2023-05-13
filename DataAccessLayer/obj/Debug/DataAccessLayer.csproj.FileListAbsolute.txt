@@ -15,3 +15,5 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataA
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources

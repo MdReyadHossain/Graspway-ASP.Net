@@ -72,6 +72,14 @@
     <Compile Include="Migrations\202305131525209_OrderDetailsAdded.designer.cs">
       <DependentUpon>202305131525209_OrderDetailsAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305131856084_adminRevenueAdded.cs" />
+    <Compile Include="Migrations\202305131856084_adminRevenueAdded.designer.cs">
+      <DependentUpon>202305131856084_adminRevenueAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305131908055_coursePriceAdded.cs" />
+    <Compile Include="Migrations\202305131908055_coursePriceAdded.designer.cs">
+      <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -111,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305131525209_OrderDetailsAdded.resx">
       <DependentUpon>202305131525209_OrderDetailsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305131856084_adminRevenueAdded.resx">
+      <DependentUpon>202305131856084_adminRevenueAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305131908055_coursePriceAdded.resx">
+      <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

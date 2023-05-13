@@ -31,5 +31,8 @@ namespace DataAccessLayer.Models
 
         [Required]
         public string AdminImage { get; set; }
+        
+        [Required]
+        public double? TotalRevenue { get; set; }
     }
 }

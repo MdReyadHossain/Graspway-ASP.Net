@@ -30,5 +30,8 @@ namespace BusinessLogicLayer.DTOs
 
         [Required]
         public string AdminImage { get; set; }
+
+        [Required]
+        public double? TotalRevenue { get; set; }
     }
 }

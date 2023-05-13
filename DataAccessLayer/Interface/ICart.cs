@@ -11,8 +11,7 @@ namespace DataAccessLayer.Interface
         List<TYPE> GetCart(ID id);
         TYPE Get(ID id);
         RET Add(TYPE obj);
-        RET Update(TYPE obj);
-        RET Checkout(ID id);
+        object Checkout(ID id);
         bool Delete(ID id);
     }
 }

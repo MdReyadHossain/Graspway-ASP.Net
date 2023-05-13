@@ -136,22 +136,20 @@ namespace AppLayer.Controllers
             }
         }
 
-
         [HttpGet]
-        [Route("api/cart/checkout/{id}")]
-        public HttpResponseMessage Checkout(int student_id)
+        [Route("api/cart/checkout/{studentId}")]
+        public HttpResponseMessage Checkout(int studentId)
         {
             try
             {
-                var res = CartService.Checkout(student_id);
-                return Request.CreateResponse(HttpStatusCode.OK);
+                var data = CartService.Checkout(studentId);
+                return Request.CreateResponse(new { data = data });
             }
             catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-
 
         [HttpGet]
         [Route("api/cart/delete/{id}")]

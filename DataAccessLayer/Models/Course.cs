@@ -28,6 +28,9 @@ namespace DataAccessLayer.Models
         [Required]
         public double Rating { get; set; }
 
+        [Required]
+        public double Price { get; set; }
+
         public virtual ICollection<Cart> Carts { get; set; }
         public virtual ICollection<CourseContent> CourseContents { get; set; }
         public virtual ICollection<CourseReview> CourseReviews { get; set; }

@@ -21,7 +21,6 @@ namespace DataAccessLayer.Models
         public int StudentId { get; set; }
         public virtual Student Student { get; set; }
 
-        [Required]
         public double Price { get; set; }
     }
 }
