@@ -72,3 +72,6 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\EntityFramework.dl
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\DataAccessLayer.pdb
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\DataAccessLayer.dll.config
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\EntityFramework.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\EntityFramework.SqlServer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\BusinessLogicLayer.dll.config
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\AppLayer\bin\EntityFramework.SqlServer.xml

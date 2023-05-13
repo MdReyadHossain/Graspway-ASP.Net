@@ -12,6 +12,21 @@ namespace AppLayer.Controllers
     public class AdminController : ApiController
     {
         // --------Admin profile route START-------- \\
+        [HttpGet]
+        [Route("api/admin/dashboard")]
+        public HttpResponseMessage GetDashboard()
+        {
+            try
+            {
+                var admin = AdminService.AdminCount();
+                return Request.CreateResponse(new { Admin = admin });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+        
         [HttpPost]
         [Route("api/admin/add")]
         public HttpResponseMessage Add(AdminDTO admin)

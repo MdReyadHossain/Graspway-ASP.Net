@@ -8,7 +8,6 @@ namespace BusinessLogicLayer.DTOs
 {
     public class CatagoryDTO
     {
-        [Required]
         public int id { get; set; }
 
         [Required]

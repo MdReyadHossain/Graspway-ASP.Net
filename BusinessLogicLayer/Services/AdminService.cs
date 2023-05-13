@@ -1,6 +1,7 @@
 ﻿using BusinessLogicLayer.DTOs;
 using DataAccessLayer;
 using DataAccessLayer.Models;
+using DataAccessLayer.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,12 @@ namespace BusinessLogicLayer.Services
 {
     public class AdminService
     {
+        public static int AdminCount()
+        {
+            var data = AdminRepo.AdminCount();
+            return data;
+        }
+
         public static List<AdminDTO> Get()
         {
             var data = DataAccessFactory.AdminData().Get();

@@ -9,7 +9,6 @@ namespace BusinessLogicLayer.DTOs
 {
     public class AdminDTO
     {
-        [Required]
         public int id { get; set; }
 
         [Required]

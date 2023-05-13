@@ -19,7 +19,7 @@ namespace DataAccessLayer.Models
         public string Password { get; set; }
 
         [Required]
-        public string Dob { get; set; }
+        public DateTime Dob { get; set; }
 
         [Required]
         [RegularExpression(@"^(\+)?(\d{2})?0?(\d{10})$", ErrorMessage = "Enter a valid 11-digit phone number")]
@@ -28,5 +28,20 @@ namespace DataAccessLayer.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
+        [Required]
+        public string StudentImage { get; set; }
+
+        [Required]
+        public double fund { get; set; }
+
+        [Required]
+        public bool action { get; set; }
+
+        public virtual ICollection<Cart> Carts { get; set; }
+        public Student()
+        {
+            Carts = new List<Cart>();
+        }
     }
 }

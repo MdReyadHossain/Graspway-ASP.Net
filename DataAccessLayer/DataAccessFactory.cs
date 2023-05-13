@@ -35,5 +35,25 @@ namespace DataAccessLayer
         {
             return new CourseReviewRepo();
         }
+
+        public static IProfile<Instructor, int, string, bool> InstructorData()
+        {
+            return new InstructorRepo();
+        }
+
+        public static IData<Course, int, bool> CourseData()
+        {
+            return new CourseRepo();
+        }
+
+        public static IData<CourseContent, int, bool> CourseContentData()
+        {
+            return new CourseContentRepo();
+        }
+        
+        public static IData<Cart, int, bool> CartData()
+        {
+            return new CartRepo();
+        }
     }
 }

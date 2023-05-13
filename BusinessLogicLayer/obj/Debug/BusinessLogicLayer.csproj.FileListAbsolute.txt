@@ -10,3 +10,8 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\obj\Debug\Bu
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\AutoMapper.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\AutoMapper.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml

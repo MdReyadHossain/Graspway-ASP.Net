@@ -67,17 +67,29 @@
     <Compile Include="Migrations\202305022131109_columnNameChanged.designer.cs">
       <DependentUpon>202305022131109_columnNameChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305130900011_normalizationAdded.cs" />
+    <Compile Include="Migrations\202305130900011_normalizationAdded.designer.cs">
+      <DependentUpon>202305130900011_normalizationAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Catagory.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseContent.cs" />
     <Compile Include="Models\CourseReview.cs" />
     <Compile Include="Models\CourseStudent.cs" />
+    <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\AdminRepo.cs" />
+    <Compile Include="Repos\CartRepo.cs" />
     <Compile Include="Repos\CatagoryRepo.cs" />
+    <Compile Include="Repos\CourseContentRepo.cs" />
+    <Compile Include="Repos\CourseRepo.cs" />
     <Compile Include="Repos\CourseReviewRepo.cs" />
     <Compile Include="Repos\CourseStudentRepo.cs" />
+    <Compile Include="Repos\InstructorRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
   </ItemGroup>
@@ -94,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305022131109_columnNameChanged.resx">
       <DependentUpon>202305022131109_columnNameChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305130900011_normalizationAdded.resx">
+      <DependentUpon>202305130900011_normalizationAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

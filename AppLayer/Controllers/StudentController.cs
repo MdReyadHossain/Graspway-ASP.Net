@@ -11,7 +11,7 @@ namespace AppLayer.Controllers
 {
     public class StudentController : ApiController
     {
-        // --------student profile route START-------- \\
+        // --------Student profile route START-------- \\
         [HttpPost]
         [Route("api/student/add")]
         public HttpResponseMessage Add(StudentDTO student)
@@ -83,7 +83,7 @@ namespace AppLayer.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, res);
         }
 
-        // --------student profile route END-------- \\
+        // --------Student profile route END-------- \\
 
         // --------Course Review route START-------- \\
 
@@ -103,5 +103,55 @@ namespace AppLayer.Controllers
         }
 
         // --------Course Review route END-------- \\
+
+        // --------Cart route START-------- \\
+
+        [HttpPost]
+        [Route("api/cart/add")]
+        public HttpResponseMessage AddCart(CartDTO cart)
+        {
+            try
+            {
+                var res = CartService.Create(cart);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+        
+        [HttpGet]
+        [Route("api/cart/{id}")]
+        public HttpResponseMessage Cart(CartDTO cart)
+        {
+            try
+            {
+                var res = CartService.Create(cart);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("api/cart/checkout")]
+        public HttpResponseMessage Checkout(CartDTO review)
+        {
+            try
+            {
+                var res = CartService.Create(review);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        // --------Cart route END-------- \\
+
     }
 }

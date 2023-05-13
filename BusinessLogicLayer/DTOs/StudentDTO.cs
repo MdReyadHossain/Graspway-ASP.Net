@@ -9,7 +9,6 @@ namespace BusinessLogicLayer.DTOs
 {
     public class StudentDTO
     {
-        [Required]
         public int id { get; set; }
 
         [Required]
@@ -19,7 +18,7 @@ namespace BusinessLogicLayer.DTOs
         public string Password { get; set; }
 
         [Required]
-        public string Dob { get; set; }
+        public DateTime Dob { get; set; }
 
         [Required]
         [RegularExpression(@"^(\+)?(\d{2})?0?(\d{10})$", ErrorMessage = "Enter a valid 11-digit phone number")]
@@ -28,5 +27,14 @@ namespace BusinessLogicLayer.DTOs
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
+        [Required]
+        public string StudentImage { get; set; }
+
+        [Required]
+        public float fund { get; set; }
+
+        [Required]
+        public bool action { get; set; }
     }
 }
