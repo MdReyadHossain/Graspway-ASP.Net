@@ -18,7 +18,7 @@ namespace BusinessLogicLayer.DTOs
         public int StudentID { get; set; }
 
         [Required]
-        public float Price { get; set; }
+        public double Price { get; set; }
 
         [Required]
         public bool Status { get; set; }

@@ -19,5 +19,6 @@ namespace DataAccessLayer
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseContent> CourseContents { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
     }
 }

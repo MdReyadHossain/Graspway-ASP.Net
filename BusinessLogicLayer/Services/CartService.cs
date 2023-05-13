@@ -12,10 +12,15 @@ namespace BusinessLogicLayer.Services
 {
     public class CartService
     {
-        public static List<CartDTO> GetCart(int id)
+        public static List<CartDTO> GetCart(int student_id)
         {
-            var data = CartRepo.GetCart(id);
+            var data = DataAccessFactory.CartData().GetCart(student_id);
             return Convert(data);
+        }
+
+        public static bool Checkout(int student_id)
+        {
+            return DataAccessFactory.CartData().Checkout(student_id);
         }
 
         public static bool Create(CartDTO prj)

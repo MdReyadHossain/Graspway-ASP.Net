@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Interface
 {
-    interface ICart<TYPE, ID, RET>
+    public interface ICart<TYPE, ID, RET>
     {
         List<TYPE> GetCart(ID id);
         TYPE Get(ID id);
         RET Add(TYPE obj);
         RET Update(TYPE obj);
+        RET Checkout(ID id);
         bool Delete(ID id);
     }
 }

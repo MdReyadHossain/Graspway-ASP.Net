@@ -8,29 +8,19 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models
 {
-    public class CourseStudent
+    public class OrderDetails
     {
         [Key]
         public int id { get; set; }
-
-        [ForeignKey("Course")]
-        public int CourseId { get; set; }
-        public virtual Course Course { get; set; }
 
         [ForeignKey("Student")]
         public int StudentId { get; set; }
         public virtual Student Student { get; set; }
 
         [Required]
-        public double Price { get; set; }
+        public DateTime CheckoutAt { get; set; }
 
         [Required]
-        public int Rating { get; set; }
-
-        [Required]
-        public DateTime PurchaseAt { get; set; }
-
-        [Required]
-        public bool Status { get; set; }
+        public double TotalPayment { get; set; }
     }
 }

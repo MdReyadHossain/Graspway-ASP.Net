@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repos
 {
-    public class CartRepo : Repo, ICart<Cart, int, bool>
+    internal class CartRepo : Repo, ICart<Cart, int, bool>
     {
+        public List<Cart> GetCart(int student_id)
+        {
+            return (from cart in db.Carts
+                    where cart.StudentId == student_id
+                    select cart).ToList();
+        }
+
         public bool Add(Cart obj)
         {
             db.Carts.Add(obj);
-            return db.SaveChanges() > 0;
-        }
-
-        public bool Delete(int id)
-        {
-            var cart = Get(id);
-            db.Carts.Remove(cart);
             return db.SaveChanges() > 0;
         }
 
@@ -35,11 +35,41 @@ namespace DataAccessLayer.Repos
             return db.SaveChanges() > 0;
         }
 
-        public List<Cart> GetCart(int id)
+        public bool Checkout(int student_id)
         {
-            return (from cart in db.Carts
-                    where cart.StudentId == id
-                    select cart).ToList();
+            return true;
+            /*double totalPrice = 0;
+            var cart = GetCart(student_id);
+            CourseStudent cs = new CourseStudent();
+            foreach(var c in cart)
+            {
+                cs.CourseId = c.CourseId;
+                cs.StudentId = c.StudentId;
+                cs.PurchaseAt = DateTime.Now;
+                cs.Rating = 0;
+                cs.Price = c.Price;
+                cs.Status = false;
+
+                totalPrice += c.Price;
+                db.Carts.Remove(c);
+            }
+
+            OrderDetails od = new OrderDetails();
+            od.StudentId = student_id;
+            od.CheckoutAt = DateTime.Now;
+            od.TotalPayment = totalPrice;
+
+            db.OrderDetails.Add(od);
+
+            db.CourseStudents.Add(cs);
+            return db.SaveChanges() > 0;*/
+        }
+
+        public bool Delete(int id)
+        {
+            var cart = Get(id);
+            db.Carts.Remove(cart);
+            return db.SaveChanges() > 0;
         }
     }
 }

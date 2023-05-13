@@ -7,13 +7,13 @@ namespace DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class columnNameChanged : IMigrationMetadata
+    public sealed partial class OrderDetailsAdded : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(columnNameChanged));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(OrderDetailsAdded));
         
         string IMigrationMetadata.Id
         {
-            get { return "202305022131109_columnNameChanged"; }
+            get { return "202305131525209_OrderDetailsAdded"; }
         }
         
         string IMigrationMetadata.Source

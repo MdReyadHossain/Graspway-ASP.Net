@@ -32,7 +32,7 @@ namespace BusinessLogicLayer.DTOs
         public string StudentImage { get; set; }
 
         [Required]
-        public float fund { get; set; }
+        public double fund { get; set; }
 
         [Required]
         public bool action { get; set; }

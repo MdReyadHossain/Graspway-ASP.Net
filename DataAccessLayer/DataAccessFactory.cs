@@ -51,7 +51,7 @@ namespace DataAccessLayer
             return new CourseContentRepo();
         }
         
-        public static IData<Cart, int, bool> CartData()
+        public static ICart<Cart, int, bool> CartData()
         {
             return new CartRepo();
         }
