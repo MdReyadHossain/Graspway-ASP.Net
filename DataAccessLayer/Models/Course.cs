@@ -26,9 +26,6 @@ namespace DataAccessLayer.Models
         public virtual Instructor Instructor { get; set; }
 
         [Required]
-        public string InstructorName { get; set; }
-
-        [Required]
         public double Rating { get; set; }
 
         public virtual ICollection<Cart> Carts { get; set; }

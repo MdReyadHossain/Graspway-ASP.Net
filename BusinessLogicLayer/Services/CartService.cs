@@ -1,6 +1,7 @@
 ﻿using BusinessLogicLayer.DTOs;
 using DataAccessLayer;
 using DataAccessLayer.Models;
+using DataAccessLayer.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace BusinessLogicLayer.Services
 {
     public class CartService
     {
-        public static List<CartDTO> Get()
+        public static List<CartDTO> GetCart(int id)
         {
-            var data = DataAccessFactory.CartData().Get();
+            var data = CartRepo.GetCart(id);
             return Convert(data);
         }
 
@@ -31,7 +32,7 @@ namespace BusinessLogicLayer.Services
 
         public static bool Delete(int id)
         {
-            var cart = DataAccessFactory.CatagoryData();
+            var cart = DataAccessFactory.CartData();
             return cart.Delete(id);
         }
 

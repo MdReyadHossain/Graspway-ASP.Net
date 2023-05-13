@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repos
 {
-    public class CartRepo : Repo, IData<Cart, int, bool>
+    public class CartRepo : Repo, ICart<Cart, int, bool>
     {
         public bool Add(Cart obj)
         {
@@ -21,11 +21,6 @@ namespace DataAccessLayer.Repos
             var cart = Get(id);
             db.Carts.Remove(cart);
             return db.SaveChanges() > 0;
-        }
-
-        public List<Cart> Get()
-        {
-            return db.Carts.ToList();
         }
 
         public Cart Get(int id)

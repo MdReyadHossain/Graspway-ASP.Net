@@ -55,21 +55,17 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interface\IData.cs" />
     <Compile Include="Interface\IProfile.cs" />
-    <Compile Include="Migrations\202305021909158_adminDbinit.cs" />
-    <Compile Include="Migrations\202305021909158_adminDbinit.designer.cs">
-      <DependentUpon>202305021909158_adminDbinit.cs</DependentUpon>
+    <Compile Include="Migrations\202305130951569_relationDBAdded.cs" />
+    <Compile Include="Migrations\202305130951569_relationDBAdded.designer.cs">
+      <DependentUpon>202305130951569_relationDBAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202305022029179_tableAdded.cs" />
-    <Compile Include="Migrations\202305022029179_tableAdded.designer.cs">
-      <DependentUpon>202305022029179_tableAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202305130958234_instructorNameDroped.cs" />
+    <Compile Include="Migrations\202305130958234_instructorNameDroped.designer.cs">
+      <DependentUpon>202305130958234_instructorNameDroped.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202305022131109_columnNameChanged.cs" />
-    <Compile Include="Migrations\202305022131109_columnNameChanged.designer.cs">
-      <DependentUpon>202305022131109_columnNameChanged.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305130900011_normalizationAdded.cs" />
-    <Compile Include="Migrations\202305130900011_normalizationAdded.designer.cs">
-      <DependentUpon>202305130900011_normalizationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202305131018246_cartPrice.cs" />
+    <Compile Include="Migrations\202305131018246_cartPrice.designer.cs">
+      <DependentUpon>202305131018246_cartPrice.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -98,17 +94,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305021909158_adminDbinit.resx">
-      <DependentUpon>202305021909158_adminDbinit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305130951569_relationDBAdded.resx">
+      <DependentUpon>202305130951569_relationDBAdded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305022029179_tableAdded.resx">
-      <DependentUpon>202305022029179_tableAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305130958234_instructorNameDroped.resx">
+      <DependentUpon>202305130958234_instructorNameDroped.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305022131109_columnNameChanged.resx">
-      <DependentUpon>202305022131109_columnNameChanged.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305130900011_normalizationAdded.resx">
-      <DependentUpon>202305130900011_normalizationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305131018246_cartPrice.resx">
+      <DependentUpon>202305131018246_cartPrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -40,6 +40,9 @@ namespace DataAccessLayer.Models
         public double Rating { get; set; }
 
         [Required]
+        public DateTime JoinedAt { get; set; }
+
+        [Required]
         public bool Status { get; set; }
 
         public virtual ICollection<Course> Courses { get; set; }

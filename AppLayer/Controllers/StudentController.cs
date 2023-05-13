@@ -123,12 +123,12 @@ namespace AppLayer.Controllers
         
         [HttpGet]
         [Route("api/cart/{id}")]
-        public HttpResponseMessage Cart(CartDTO cart)
+        public HttpResponseMessage Cart(int id)
         {
             try
             {
-                var res = CartService.Create(cart);
-                return Request.CreateResponse(HttpStatusCode.OK, res);
+                var res = CartService.GetCart(id);
+                return Request.CreateResponse(new { cart=res });
             }
             catch (Exception ex)
             {
@@ -137,12 +137,27 @@ namespace AppLayer.Controllers
         }
 
         [HttpPost]
-        [Route("api/cart/checkout")]
-        public HttpResponseMessage Checkout(CartDTO review)
+        [Route("api/cart/checkout/{id}")]
+        public HttpResponseMessage Checkout(int id)
         {
             try
             {
-                var res = CartService.Create(review);
+                var addcouse = CourseStudentService.Create(course);
+                return Request.CreateResponse(HttpStatusCode.OK, addcouse);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/cart/delete/{id}")]
+        public HttpResponseMessage DeleteCart(int id)
+        {
+            try
+            {
+                var res = CartService.Delete(id);
                 return Request.CreateResponse(HttpStatusCode.OK, res);
             }
             catch (Exception ex)

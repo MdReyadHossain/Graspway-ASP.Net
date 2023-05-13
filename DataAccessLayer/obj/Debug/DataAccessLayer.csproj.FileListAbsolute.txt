@@ -10,8 +10,7 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataA
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminDbinit.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.relationDBAdded.resources
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
-E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.tableAdded.resources
-E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.columnNameChanged.resources
-E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.normalizationAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources

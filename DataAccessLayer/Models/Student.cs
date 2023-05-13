@@ -33,6 +33,9 @@ namespace DataAccessLayer.Models
         public string StudentImage { get; set; }
 
         [Required]
+        public DateTime Registration { get; set; }
+
+        [Required]
         public double fund { get; set; }
 
         [Required]
