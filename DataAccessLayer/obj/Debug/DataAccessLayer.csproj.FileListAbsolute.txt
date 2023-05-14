@@ -17,3 +17,22 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataA
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.relationDBAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

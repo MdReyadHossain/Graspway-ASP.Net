@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repos
 {
-    internal class CourseStudentRepo : Repo, IData<CourseStudent, int, bool>
+    public class CourseStudentRepo : Repo, IData<CourseStudent, int, bool>
     {
         public bool Add(CourseStudent obj)
         {
@@ -38,6 +38,14 @@ namespace DataAccessLayer.Repos
         public CourseStudent Get(int id)
         {
             return db.CourseStudents.Find(id);
+        }
+
+        public static List<CourseStudent> MyCourse(int studentId)
+        {
+            var db = new AppDbContext(); 
+            return (from cs in db.CourseStudents
+                    where cs.StudentId == studentId && cs.Status == true
+                    select cs).ToList();
         }
     }
 }

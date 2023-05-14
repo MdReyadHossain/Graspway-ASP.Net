@@ -89,6 +89,7 @@
     <Compile Include="Models\CourseReview.cs" />
     <Compile Include="Models\CourseStudent.cs" />
     <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\NoticeBoard.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Repos\CourseReviewRepo.cs" />
     <Compile Include="Repos\CourseStudentRepo.cs" />
     <Compile Include="Repos\InstructorRepo.cs" />
+    <Compile Include="Repos\NoticeBoardRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
   </ItemGroup>

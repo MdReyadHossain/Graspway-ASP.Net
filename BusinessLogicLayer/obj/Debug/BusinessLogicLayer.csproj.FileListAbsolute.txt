@@ -15,3 +15,20 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\Au
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\AutoMapper.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\AutoMapper.xml
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\Code\Advance .Net\Graspway\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

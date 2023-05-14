@@ -179,5 +179,127 @@ namespace AppLayer.Controllers
         }
 
         // --------Catagory route END-------- \\
+
+
+        //-----Instructor Notice Board Part-----//
+        //-----Get All Notice Board-----//
+        [HttpGet]
+        [Route("api/admin/notices")]
+        public HttpResponseMessage GetNotice()
+        {
+            try
+            {
+                var data = NoticeBoardService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get Notice Board By ID-----//
+        [HttpGet]
+        [Route("api/admin/notices/{id}")]
+        public HttpResponseMessage GetNotice(int id)
+        {
+            try
+            {
+                var data = NoticeBoardService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Post on Notice Board-----//
+        [HttpPost]
+        [Route("api/admin/notices/add")]
+        public HttpResponseMessage AddNotice(NoticeBoardDTO noticeBoard)
+        {
+            try
+            {
+                var registration = NoticeBoardService.Create(noticeBoard);
+                return Request.CreateResponse(HttpStatusCode.OK, registration);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Notice Board Update-----//
+        [HttpPatch]
+        [Route("api/admin/notices/editnotice")]
+        public IHttpActionResult UpdateNotice([FromBody] NoticeBoardDTO noticeBoard)
+        {
+            try
+            {
+                var isUpdate = NoticeBoardService.Update(noticeBoard);
+                return ResponseMessage(isUpdate ? Request.CreateResponse(HttpStatusCode.OK) : Request.CreateResponse(HttpStatusCode.BadRequest));
+            }
+            catch (Exception ex)
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                else
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message));
+                }
+            }
+        }
+
+        //-----Notice Board Delete-----//
+        [HttpDelete]
+        [Route("api/admin/notices/delete/{id}")]
+        public IHttpActionResult DeleteNotice(int id)
+        {
+            try
+            {
+                var isDelete = NoticeBoardService.Delete(id);
+                return ResponseMessage(isDelete ? Request.CreateResponse(HttpStatusCode.OK) : Request.CreateResponse(HttpStatusCode.BadRequest));
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message));
+            }
+        }
+
+
+        //-----Get All Course-----//
+        [HttpGet]
+        [Route("api/course")]
+        public HttpResponseMessage GetCourse()
+        {
+            try
+            {
+                var data = CourseService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get Course By ID-----//
+        [HttpGet]
+        [Route("api/course/{id}")]
+        public HttpResponseMessage GetCourse(int id)
+        {
+            try
+            {
+                var data = CourseService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
     }
 }

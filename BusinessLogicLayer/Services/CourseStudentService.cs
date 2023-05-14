@@ -1,6 +1,7 @@
 ﻿using BusinessLogicLayer.DTOs;
 using DataAccessLayer;
 using DataAccessLayer.Models;
+using DataAccessLayer.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,12 @@ namespace BusinessLogicLayer.Services
         {
             var courseReview = DataAccessFactory.CourseStudentData();
             return courseReview.Delete(id);
+        }
+
+        public static List<CourseStudentDTO> MyCourse(int studentId)
+        {
+            var data = CourseStudentRepo.MyCourse(studentId);   
+            return Convert(data);
         }
 
         static List<CourseStudentDTO> Convert(List<CourseStudent> prj)

@@ -294,5 +294,111 @@ namespace AppLayer.Controllers
                 return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message));
             }
         }
+
+
+        //-----Instructor Notice Board Part-----//
+        //-----Get All Notice Board-----//
+        [HttpGet]
+        [Route("api/instructor/notices")]
+        public HttpResponseMessage GetNotice()
+        {
+            try
+            {
+                var data = NoticeBoardService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get Notice Board By ID-----//
+        [HttpGet]
+        [Route("api/instructor/notices/{id}")]
+        public HttpResponseMessage GetNotice(int id)
+        {
+            try
+            {
+                var data = NoticeBoardService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Post on Notice Board-----//
+        [HttpPost]
+        [Route("api/instructor/notices/add")]
+        public HttpResponseMessage AddNotice(NoticeBoardDTO noticeBoard)
+        {
+            try
+            {
+                var registration = NoticeBoardService.Create(noticeBoard);
+                return Request.CreateResponse(HttpStatusCode.OK, registration);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Notice Board Update-----//
+        [HttpPatch]
+        [Route("api/instructor/notices/editnotice")]
+        public IHttpActionResult UpdateNotice([FromBody] NoticeBoardDTO noticeBoard)
+        {
+            try
+            {
+                var isUpdate = NoticeBoardService.Update(noticeBoard);
+                return ResponseMessage(isUpdate ? Request.CreateResponse(HttpStatusCode.OK) : Request.CreateResponse(HttpStatusCode.BadRequest));
+            }
+            catch (Exception ex)
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                else
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message));
+                }
+            }
+        }
+
+        //-----Notice Board Delete-----//
+        [HttpDelete]
+        [Route("api/instructor/notices/delete/{id}")]
+        public IHttpActionResult DeleteNotice(int id)
+        {
+            try
+            {
+                var isDelete = NoticeBoardService.Delete(id);
+                return ResponseMessage(isDelete ? Request.CreateResponse(HttpStatusCode.OK) : Request.CreateResponse(HttpStatusCode.BadRequest));
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message));
+            }
+        }
+
+
+        //-----Total Income Show-----//
+        [HttpGet]
+        [Route("api/instructor/totalincome/{instructorId}")]
+        public HttpResponseMessage InstructorIncome(int instructorId)
+        {
+            try
+            {
+                var data = InstructorService.InstructorIncome(instructorId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch(Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
     }
 }

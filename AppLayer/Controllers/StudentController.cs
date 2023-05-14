@@ -168,5 +168,106 @@ namespace AppLayer.Controllers
 
         // --------Cart route END-------- \\
 
+
+        //-----Instructor Notice Board Part-----//
+        //-----Get All Notice Board-----//
+        [HttpGet]
+        [Route("api/student/notices")]
+        public HttpResponseMessage GetNotice()
+        {
+            try
+            {
+                var data = NoticeBoardService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get All Course-----//
+        [HttpGet]
+        [Route("api/course")]
+        public HttpResponseMessage GetCourse()
+        {
+            try
+            {
+                var data = CourseService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get Course By ID-----//
+        [HttpGet]
+        [Route("api/course/{id}")]
+        public HttpResponseMessage GetCourse(int id)
+        {
+            try
+            {
+                var data = CourseService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+
+        //-----Get All Course Content-----//
+        [HttpGet]
+        [Route("api/student/mycourse/content")]
+        public HttpResponseMessage GetCourseContent()
+        {
+            try
+            {
+                var data = CourseContentService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        //-----Get Course Content By ID-----//
+        [HttpGet]
+        [Route("api/student/mycourse/content/{id}")]
+        public HttpResponseMessage GetCourseContent(int id)
+        {
+            try
+            {
+                var data = CourseContentService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+
+        //-----Get My All Courses-----//
+        [HttpGet]
+        [Route("api/student/mycourse/{studentId}")]
+        public HttpResponseMessage GetMyCourse(int studentId)
+        {
+            try
+            {
+                var data = CourseStudentService.MyCourse(studentId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+
+            catch(Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
     }
 }

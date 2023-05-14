@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.Interface;
 using DataAccessLayer.Models;
 using DataAccessLayer.Repos;
+using GraspWayDataAccessLayer.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,11 @@ namespace DataAccessLayer
         public static ICart<Cart, int, bool> CartData()
         {
             return new CartRepo();
+        }
+
+        public static IData<NoticeBoard, int, bool> NoticeBoardData()
+        {
+            return new NoticeBoardRepo();
         }
     }
 }
