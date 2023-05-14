@@ -55,6 +55,7 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interface\ICart.cs" />
     <Compile Include="Interface\IData.cs" />
+    <Compile Include="Interface\ILogin.cs" />
     <Compile Include="Interface\IProfile.cs" />
     <Compile Include="Migrations\202305130951569_relationDBAdded.cs" />
     <Compile Include="Migrations\202305130951569_relationDBAdded.designer.cs">
@@ -80,6 +81,10 @@
     <Compile Include="Migrations\202305131908055_coursePriceAdded.designer.cs">
       <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305140912548_noticeBoardAdded.cs" />
+    <Compile Include="Migrations\202305140912548_noticeBoardAdded.designer.cs">
+      <DependentUpon>202305140912548_noticeBoardAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -89,6 +94,7 @@
     <Compile Include="Models\CourseReview.cs" />
     <Compile Include="Models\CourseStudent.cs" />
     <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\NoticeBoard.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\Student.cs" />
@@ -101,6 +107,7 @@
     <Compile Include="Repos\CourseReviewRepo.cs" />
     <Compile Include="Repos\CourseStudentRepo.cs" />
     <Compile Include="Repos\InstructorRepo.cs" />
+    <Compile Include="Repos\LoginRepo.cs" />
     <Compile Include="Repos\NoticeBoardRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
@@ -127,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305131908055_coursePriceAdded.resx">
       <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305140912548_noticeBoardAdded.resx">
+      <DependentUpon>202305140912548_noticeBoardAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

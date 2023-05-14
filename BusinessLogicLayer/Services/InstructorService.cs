@@ -52,6 +52,12 @@ namespace BusinessLogicLayer.Services
             return instructor.Delete(id);
         }
 
+        public static double InstructorIncome(int instructorId)
+        {
+            var data = InstructorRepo.InstructorIncome(instructorId);
+            return data;
+        }
+
         static List<InstructorDTO> Convert(List<Instructor> instructors)
         {
             var data = new List<InstructorDTO>();

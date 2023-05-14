@@ -61,5 +61,10 @@ namespace DataAccessLayer
         {
             return new NoticeBoardRepo();
         }
+        
+        public static ILogin<Login> LoginData()
+        {
+            return new LoginRepo();
+        }
     }
 }

@@ -27,7 +27,6 @@ namespace DataAccessLayer.Repos
             return db.Instructors.FirstOrDefault(i => i.Status == isStatusTrue);
         }
 
-
         public bool Create(Instructor obj)
         {
             db.Instructors.Add(obj);
@@ -46,6 +45,15 @@ namespace DataAccessLayer.Repos
             var instructor = Get(id);
             db.Instructors.Remove(instructor);
             return db.SaveChanges() > 0;
+        }
+
+        public static double InstructorIncome(int instructorId)
+        {
+            var db = new AppDbContext();
+            var data = (from instructor in db.Instructors
+                        where instructor.Id == instructorId
+                        select instructor.TotalIncome).SingleOrDefault();
+            return data;
         }
 
         public static List<string> InstructorCount()
