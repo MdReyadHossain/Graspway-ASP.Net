@@ -18,8 +18,8 @@ namespace AppLayer.Controllers
         {
             try
             {
-                var admin = AdminService.AdminCount();
-                return Request.CreateResponse(new { Admin = admin });
+                var admin = AdminService.AdminDashboard();
+                return Request.CreateResponse(new { admin });
             }
             catch (Exception ex)
             {

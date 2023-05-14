@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repos
 {
-    public class AdminRepo : Repo, IProfile<Admin, int, string, bool>
+    internal class AdminRepo : Repo, IProfile<Admin, int, string, bool>
     {
         public bool Create(Admin obj)
         {
@@ -43,15 +43,6 @@ namespace DataAccessLayer.Repos
             var admin = Get(id);
             db.Admins.Remove(admin);
             return db.SaveChanges() > 0;
-        }
-
-        public static int AdminCount()
-        {
-            var db = new AppDbContext();
-            var count = (from admin in db.Admins
-                         select admin).Count();
-
-            return count;
         }
     }
 }

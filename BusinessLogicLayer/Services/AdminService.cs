@@ -12,10 +12,25 @@ namespace BusinessLogicLayer.Services
 {
     public class AdminService
     {
-        public static int AdminCount()
+        public static object AdminDashboard()
         {
-            var data = AdminRepo.AdminCount();
-            return data;
+            var db = new AppDbContext();
+            var admin = (from ad in db.Admins
+                         select ad).Count();
+
+            var instructor = (from ins in db.Instructors
+                              where ins.Status == true
+                              select ins).Count();
+            var student = (from st in db.Students
+                           select st).Count();
+
+            var course = (from c in db.Courses
+                          select c).Count();
+
+            var studentReg = (from st in db.Students
+                              select st.Registration).ToList();
+
+            return new { admin, student, course };
         }
 
         public static List<AdminDTO> Get()
