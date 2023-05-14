@@ -1,0 +1,58 @@
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.relationDBAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Code\Advance .Net\Graspway\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.relationDBAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Code\Advance .Net\Graspway\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\EntityFramework.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\EntityFramework.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.relationDBAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.instructorNameDroped.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.cartPrice.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.OrderDetailsAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.adminRevenueAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.coursePriceAdded.resources
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.noticeBoardAdded.resources
