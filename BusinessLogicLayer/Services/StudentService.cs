@@ -36,7 +36,13 @@ namespace BusinessLogicLayer.Services
 
         public static bool Update(StudentDTO student)
         {
-            var data = Convert(student);
+            var data = new Student()
+            {
+                id = student.id,
+                Student_name = student.Student_name,
+                Email = student.Email,
+                PhoneNo = student.PhoneNo
+            };
             return DataAccessFactory.StudentData().Update(data);
         }
 
@@ -64,7 +70,10 @@ namespace BusinessLogicLayer.Services
                 Password = prj.Password,
                 Dob = prj.Dob,
                 Email = prj.Email,
-                PhoneNo = prj.PhoneNo
+                PhoneNo = prj.PhoneNo,
+                Registration = DateTime.Now,
+                fund = 0,
+                action = true
             };
         }
         static Student Convert(StudentDTO prj)
@@ -76,7 +85,10 @@ namespace BusinessLogicLayer.Services
                 Password = prj.Password,
                 Dob = prj.Dob,
                 Email = prj.Email,
-                PhoneNo = prj.PhoneNo
+                PhoneNo = prj.PhoneNo,
+                Registration = DateTime.Now,
+                fund = 0,
+                action = true
             };
         }
     }

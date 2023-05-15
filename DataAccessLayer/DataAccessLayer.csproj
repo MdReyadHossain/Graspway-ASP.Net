@@ -40,9 +40,18 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\AppLayer\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\AppLayer\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\AppLayer\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\AppLayer\packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,33 +66,9 @@
     <Compile Include="Interface\IData.cs" />
     <Compile Include="Interface\ILogin.cs" />
     <Compile Include="Interface\IProfile.cs" />
-    <Compile Include="Migrations\202305130951569_relationDBAdded.cs" />
-    <Compile Include="Migrations\202305130951569_relationDBAdded.designer.cs">
-      <DependentUpon>202305130951569_relationDBAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305130958234_instructorNameDroped.cs" />
-    <Compile Include="Migrations\202305130958234_instructorNameDroped.designer.cs">
-      <DependentUpon>202305130958234_instructorNameDroped.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305131018246_cartPrice.cs" />
-    <Compile Include="Migrations\202305131018246_cartPrice.designer.cs">
-      <DependentUpon>202305131018246_cartPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305131525209_OrderDetailsAdded.cs" />
-    <Compile Include="Migrations\202305131525209_OrderDetailsAdded.designer.cs">
-      <DependentUpon>202305131525209_OrderDetailsAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305131856084_adminRevenueAdded.cs" />
-    <Compile Include="Migrations\202305131856084_adminRevenueAdded.designer.cs">
-      <DependentUpon>202305131856084_adminRevenueAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305131908055_coursePriceAdded.cs" />
-    <Compile Include="Migrations\202305131908055_coursePriceAdded.designer.cs">
-      <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305140912548_noticeBoardAdded.cs" />
-    <Compile Include="Migrations\202305140912548_noticeBoardAdded.designer.cs">
-      <DependentUpon>202305140912548_noticeBoardAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202305152156391_dbinit.cs" />
+    <Compile Include="Migrations\202305152156391_dbinit.designer.cs">
+      <DependentUpon>202305152156391_dbinit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -117,26 +102,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305130951569_relationDBAdded.resx">
-      <DependentUpon>202305130951569_relationDBAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305130958234_instructorNameDroped.resx">
-      <DependentUpon>202305130958234_instructorNameDroped.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305131018246_cartPrice.resx">
-      <DependentUpon>202305131018246_cartPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305131525209_OrderDetailsAdded.resx">
-      <DependentUpon>202305131525209_OrderDetailsAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305131856084_adminRevenueAdded.resx">
-      <DependentUpon>202305131856084_adminRevenueAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305131908055_coursePriceAdded.resx">
-      <DependentUpon>202305131908055_coursePriceAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305140912548_noticeBoardAdded.resx">
-      <DependentUpon>202305140912548_noticeBoardAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305152156391_dbinit.resx">
+      <DependentUpon>202305152156391_dbinit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,10 +29,8 @@ namespace DataAccessLayer.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        [Required]
-        public string AdminImage { get; set; }
+        public string JoiningYear { get; set; }
         
-        [Required]
         public double? TotalRevenue { get; set; }
     }
 }

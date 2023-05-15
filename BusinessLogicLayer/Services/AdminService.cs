@@ -12,27 +12,6 @@ namespace BusinessLogicLayer.Services
 {
     public class AdminService
     {
-        public static object AdminDashboard()
-        {
-            var db = new AppDbContext();
-            var admin = (from ad in db.Admins
-                         select ad).Count();
-
-            var instructor = (from ins in db.Instructors
-                              where ins.Status == true
-                              select ins).Count();
-            var student = (from st in db.Students
-                           select st).Count();
-
-            var course = (from c in db.Courses
-                          select c).Count();
-
-            var studentReg = (from st in db.Students
-                              select st.Registration).ToList();
-
-            return new { admin, student, course };
-        }
-
         public static List<AdminDTO> Get()
         {
             var data = DataAccessFactory.AdminData().Get();
@@ -86,7 +65,8 @@ namespace BusinessLogicLayer.Services
                 Address = prj.Address,
                 Email = prj.Email,
                 PhoneNo = prj.PhoneNo,
-                AdminImage = prj.AdminImage
+                AdminImage = prj.AdminImage,
+                TotalRevenue = prj.TotalRevenue                
             };
         }
         static Admin Convert(AdminDTO prj)
@@ -99,7 +79,8 @@ namespace BusinessLogicLayer.Services
                 Address = prj.Address,
                 Email = prj.Email,
                 PhoneNo = prj.PhoneNo,
-                AdminImage = prj.AdminImage
+                AdminImage = prj.AdminImage,
+                TotalRevenue = prj.TotalRevenue
             };
         }
     }

@@ -2,9 +2,12 @@
 using BusinessLogicLayer.Services;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 
 namespace AppLayer.Controllers
@@ -50,14 +53,14 @@ namespace AppLayer.Controllers
         [Route("api/instructor/add")]
         public HttpResponseMessage AddProfile(InstructorDTO instructor)
         {
-            try
-            {
+            try { 
+
                 var registration = InstructorService.Create(instructor);
-                return Request.CreateResponse(HttpStatusCode.OK, registration);
+                return Request.CreateResponse(registration);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+                return Request.CreateResponse($"Error: {e.Message}");
             }
         }
 
@@ -69,7 +72,9 @@ namespace AppLayer.Controllers
             try
             {
                 var isUpdate = InstructorService.Update(instructor);
-                return ResponseMessage(isUpdate ? Request.CreateResponse(HttpStatusCode.OK) : Request.CreateResponse(HttpStatusCode.BadRequest));
+                return ResponseMessage(isUpdate ? 
+                    Request.CreateResponse(HttpStatusCode.OK) : 
+                    Request.CreateResponse(HttpStatusCode.BadRequest));
             }
             catch (Exception ex)
             {
@@ -83,6 +88,7 @@ namespace AppLayer.Controllers
                 }
             }
         }
+
 
         //-----Instructor Profile Delete-----//
         [HttpDelete]

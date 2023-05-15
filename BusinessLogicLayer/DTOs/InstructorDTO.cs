@@ -29,16 +29,12 @@ namespace BusinessLogicLayer.DTOs
         [Required]
         public DateTime DOB { get; set; }
 
-        [Required]
-        public string InstructorImage { get; set; }
+        public DateTime JoinedAt { get; set; }
 
-        [Required]
         public double TotalIncome { get; set; }
 
-        [Required]
         public double Rating { get; set; }
 
-        [Required]
         public bool Status { get; set; }
     }
 }

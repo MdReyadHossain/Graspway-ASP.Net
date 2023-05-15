@@ -29,17 +29,12 @@ namespace DataAccessLayer.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        [Required]
-        public string StudentImage { get; set; }
-
-        [Required]
         public DateTime Registration { get; set; }
 
-        [Required]
         public double fund { get; set; }
 
-        [Required]
         public bool action { get; set; }
+
 
         public virtual ICollection<Cart> Carts { get; set; }
         public Student()

@@ -33,8 +33,14 @@ namespace DataAccessLayer.Repos
 
         public bool Update(Student obj)
         {
-            var student = Get(obj.id);
-            db.Entry(student).CurrentValues.SetValues(obj);
+            var student = (from s in db.Students
+                           where s.id == obj.id
+                           select s).SingleOrDefault();
+
+            student.Student_name = obj.Student_name;
+            student.Email = obj.Email;
+            student.PhoneNo = obj.PhoneNo;
+
             return db.SaveChanges() > 0;
         }
 

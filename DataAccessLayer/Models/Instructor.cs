@@ -30,16 +30,10 @@ namespace DataAccessLayer.Models
         [Required]
         public DateTime DOB { get; set; }
 
-        [Required]
-        public string InstructorImage { get; set; }
-
-        [Required]
         public double TotalIncome { get; set; }
 
-        [Required]
         public double Rating { get; set; }
 
-        [Required]
         public DateTime JoinedAt { get; set; }
 
         [Required]

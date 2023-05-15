@@ -12,6 +12,8 @@ namespace BusinessLogicLayer.Services
 {
     public class InstructorService
     {
+        public string image = "";
+
         public static List<string> Dashboard()
         {
             var data = InstructorRepo.InstructorCount().ToList();
@@ -42,7 +44,13 @@ namespace BusinessLogicLayer.Services
 
         public static bool Update(InstructorDTO instructor)
         {
-            var data = Convert(instructor);
+            var data = new Instructor()
+            {
+                Id = instructor.Id,
+                Name = instructor.Name,
+                Email = instructor.Email,
+                PhoneNumber = instructor.PhoneNumber,
+            };
             return DataAccessFactory.InstructorData().Update(data);
         }
 
@@ -78,6 +86,7 @@ namespace BusinessLogicLayer.Services
                 Email = instructor.Email,
                 PhoneNumber = instructor.PhoneNumber,
                 DOB = instructor.DOB,
+                JoinedAt = instructor.JoinedAt,
                 TotalIncome = instructor.TotalIncome,
                 Rating = instructor.Rating,
                 Status = instructor.Status
@@ -94,6 +103,7 @@ namespace BusinessLogicLayer.Services
                 Email = instructor.Email,
                 PhoneNumber = instructor.PhoneNumber,
                 DOB = instructor.DOB,
+                JoinedAt = instructor.JoinedAt,
                 TotalIncome = instructor.TotalIncome,
                 Rating = instructor.Rating,
                 Status = instructor.Status

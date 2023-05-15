@@ -25,16 +25,12 @@ namespace BusinessLogicLayer.DTOs
         public string PhoneNo { get; set; }
 
         [Required]
-        [EmailAddress]
         public string Email { get; set; }
 
-        [Required]
-        public string StudentImage { get; set; }
+        public DateTime Registration { get; set; }
 
-        [Required]
         public double fund { get; set; }
 
-        [Required]
         public bool action { get; set; }
     }
 }

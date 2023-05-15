@@ -58,7 +58,7 @@ namespace BusinessLogicLayer.Services
                 CourseName = course.CourseName,
                 CatagoryId = course.CatagoryId,
                 InstructorId = course.InstructorId,
-                Rating = course.Rating
+                Rating = 0
             };
         }
 
@@ -70,7 +70,7 @@ namespace BusinessLogicLayer.Services
                 CourseName = course.CourseName,
                 CatagoryId = course.CatagoryId,
                 InstructorId = course.InstructorId,
-                Rating = course.Rating
+                Rating = 0
             };
         }
     }

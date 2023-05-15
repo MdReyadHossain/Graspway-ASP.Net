@@ -49,3 +49,9 @@ E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\Busines
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\Newtonsoft.Json.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\System.Net.Http.Formatting.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\System.Web.Http.dll
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\Newtonsoft.Json.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\System.Net.Http.Formatting.xml
+E:\My Files\Reyad\Study\Coding\ASP .NET\Graspway - main\Graspway-ASP.Net\BusinessLogicLayer\bin\Debug\System.Web.Http.xml

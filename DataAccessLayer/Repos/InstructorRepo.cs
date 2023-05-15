@@ -35,8 +35,13 @@ namespace DataAccessLayer.Repos
 
         public bool Update(Instructor obj)
         {
-            var instructor = Get(obj.Id);
-            db.Entry(instructor).CurrentValues.SetValues(obj);
+            var instructor = (from i in db.Instructors
+                              where i.Id == obj.Id
+                              select i).SingleOrDefault();
+
+            instructor.Name = obj.Name;
+            instructor.Email = obj.Email;
+            instructor.PhoneNumber = obj.PhoneNumber;
             return db.SaveChanges() > 0;
         }
 

@@ -1,25 +1,55 @@
 ﻿using BusinessLogicLayer.DTOs;
 using BusinessLogicLayer.Services;
+using DataAccessLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace AppLayer.Controllers
 {
+    [EnableCors(origins: "http://localhost:4430", headers: "*", methods: "*")]
     public class AdminController : ApiController
     {
         // --------Admin profile route START-------- \\
         [HttpGet]
         [Route("api/admin/dashboard")]
-        public HttpResponseMessage GetDashboard()
+        public object GetDashboard()
         {
             try
             {
-                var admin = AdminService.AdminDashboard();
-                return Request.CreateResponse(new { admin });
+                var db = new AppDbContext();
+                var admin = (from ad in db.Admins
+                             select ad).Count();
+
+                var instructor = (from ins in db.Instructors
+                                  where ins.Status == true
+                                  select ins).Count();
+                var student = (from st in db.Students
+                               select st).Count();
+
+                var course = (from c in db.Courses
+                              select c).Count();
+
+                var instructorDate = (from ins in db.Instructors
+                                  where ins.Status == true
+                                  select new { 
+                                      month = ins.JoinedAt.Month, 
+                                      year = ins.JoinedAt.Year 
+                                  }).ToList();
+
+                var studentDate = (from st in db.Students
+                                      where st.action == true
+                                      select new
+                                      {
+                                          month = st.Registration.Month,
+                                          year = st.Registration.Year
+                                      }).ToList();
+
+                return Request.CreateResponse(new { admin, instructor, student, course, instructorDate, studentDate });
             }
             catch (Exception ex)
             {
